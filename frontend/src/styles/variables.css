@@ -1,0 +1,68 @@
+/* Design tokens. Everything visual in the app reads from these custom properties. */
+:root {
+  /* Surfaces and text: cool, quiet greys with a blue-green cast */
+  --bg: #f2f5f7;
+  --surface: #ffffff;
+  --surface-2: #f7f9fb;
+  --ink: #14212b;
+  --ink-2: #3a4955;
+  --muted: #5e6e7c;
+  --line: #dce3e9;
+  --line-strong: #c3ced7;
+
+  /* Brand: deep harbour teal */
+  --primary: #1f6f78;
+  --primary-hover: #185a62;
+  --primary-ink: #ffffff;
+  --primary-soft: #e1f0f1;
+  --primary-soft-ink: #17575f;
+  --deep: #123c43;
+  --focus: #1a5fb4;
+
+  /* Priority: four steps from calm green to urgent crimson (rail, badge text, badge fill) */
+  --p-low-rail: #5fa67f;     --p-low: #2f6b4a;     --p-low-bg: #e4f1e9;
+  --p-medium-rail: #d4a62a;  --p-medium: #7a5d0a;  --p-medium-bg: #faf0cf;
+  --p-high-rail: #e07a3a;    --p-high: #a8470f;    --p-high-bg: #fbe5d6;
+  --p-urgent-rail: #c8344f;  --p-urgent: #9e1f35;  --p-urgent-bg: #f9dce1;
+
+  /* Status */
+  --s-pending: #4b5b69;      --s-pending-bg: #e8edf1;
+  --s-in_progress: #24558f;  --s-in_progress-bg: #dfeaf8;
+  --s-completed: #2f6b4a;    --s-completed-bg: #e4f1e9;
+
+  /* Feedback */
+  --danger: #b3263e;
+  --danger-hover: #961e33;
+  --danger-bg: #fbe9ec;
+  --warning-bg: #fdf3d8;
+  --warning-line: #e6c765;
+  --warning-ink: #5f4607;
+  --success-bg: #e4f1e9;
+  --success-line: #9fcdb3;
+  --success-ink: #1f5a3c;
+  --info-bg: #e3eef9;
+  --info-line: #a9c7e8;
+  --info-ink: #1f4a7a;
+
+  /* Type */
+  --font: 'Hanken Grotesk Variable', 'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+
+  /* Shape and space */
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --shadow-pop: 0 12px 32px rgba(20, 33, 43, 0.18);
+  --content-width: 1080px;
+}
