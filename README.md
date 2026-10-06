@@ -8,15 +8,41 @@ Focus Flow/
   frontend/   React 19, Vite, React Router, Axios, plain CSS with variables
   package.json  npm workspaces + one-command dev/test scripts
 ```
-
+```
 ## Run it
 
 Requires Node 20+.
 
-```bash
-npm install
-cp backend/.env.example backend/.env   # then set JWT_SECRET to a long random string
-npm run dev                            # API on :4000, web app on :5173
+One-time setup:
+bash
+npm install(root folder)
+This installs both the frontend and the backend from the root folder.
+
+Then create the backend settings file:
+bash
+# macOS / Linux / Git Bash
+cp backend/.env.example backend/.env
+
+# Windows Command Prompt
+copy backend\.env.example to  backend\.env
+Open backend/.env and replace JWT_SECRET with any long random string. You can generate one with:
+
+bash
+node -e "console.log(require('crypto').randomBytes(48).toString('hex'))"
+Run both together (easiest)
+bash
+npm run dev
+Backend API: http://localhost:4000
+Frontend app: http://localhost:5173 (open this one)
+The SQLite database file is created automatically at backend/data/focusflow.db on first start.
+Run them separately (two terminals)
+bash
+# Terminal 1: backend
+npm run dev 
+
+# Terminal 2: frontend
+npm run dev
+
 ```
 
 Open http://localhost:5173 and create an account. The SQLite file is created at `backend/data/focusflow.db`.
